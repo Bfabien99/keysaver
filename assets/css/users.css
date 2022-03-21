@@ -1,0 +1,190 @@
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.add{
+    padding: 10px;
+    border-radius: 2px;
+    background-color: tomato;
+}
+
+.edit{
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgb(71, 111, 255);
+}
+
+.delete{
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgb(229, 23, 23);
+}
+
+.edit,.delete{
+    align-self: center;
+    width: 30%;
+}
+
+.add:hover,.edit:hover,.delete:hover,.back:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    box-shadow: 1px 5px 5px rgb(193, 193, 193);
+}
+
+.databox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 10px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 1px 10px rgb(222, 222, 222);
+    width: 700px;
+    margin: auto;
+}
+
+/* add.php */
+.back{
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgb(37, 36, 36);
+}
+
+.addform{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    border: 1px solid #5C9DF8;
+}
+
+.group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+.addform .group input{
+    height: 40px;
+    padding: 1em;
+    outline: none;
+    border: 1px solid #5C9DF8;
+    background-color: rgb(238, 234, 230);
+}
+
+.addform input[type="submit"]{
+    background-color: #5C9DF8;
+    border: 1px solid #5C9DF8;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/*  edit.php  */
+.editform{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    border: 1px solid tomato;
+}
+
+.editform input[type="submit"]{
+    background-color: tomato;
+    border: 1px solid tomato;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.editform .group input{
+    height: 40px;
+    padding: 1em;
+    outline: none;
+    border: 1px solid tomato;
+    background-color: rgb(238, 234, 230);
+    color: tomato;
+}
+
+.searchform{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+.searchform input{
+    outline: none;
+    box-shadow: 1px 5px 5px rgb(193, 193, 193);
+}
+
+.searchform input[type="search"]{
+    height: 40px;
+    width: 70%;
+    padding: 0.5em;
+    border: 1px solid lightgray;
+}
+
+.searchform input[type="submit"]{
+    width: 20%;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    background-color: red;
+
+}
+
+#keylabel{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#eye{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 100;
+}
+
+
+
+@media screen and (max-width:1000px){
+    .editform,.addform{
+        width: 80%;
+    }
+    
+}
+
+
+@media screen and (max-width:850px) {
+    .databox{
+        width: 80%;
+    }
+}
